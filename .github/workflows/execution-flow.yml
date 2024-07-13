@@ -3,10 +3,6 @@ on:
   push:
     branches:
       - main
-      - More-If-Examples  # Include the branch you are working on
-  pull_request:
-    branches:
-      - More-If-Examples  # Include the branch you are working on
   workflow_dispatch:
     inputs:
       ref:
