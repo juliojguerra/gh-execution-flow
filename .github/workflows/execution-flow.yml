@@ -3,6 +3,16 @@ on:
   push:
     branches:
       - main
+      - More-If-Examples  # Include the branch you are working on
+  pull_request:
+    branches:
+      - More-If-Examples  # Include the branch you are working on
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: 'Branch or commit to run the workflow on'
+        required: true
+        default: 'main'
 jobs:
   lint:
     runs-on: ubuntu-latest
